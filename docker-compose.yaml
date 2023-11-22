@@ -4,7 +4,7 @@ services:
   ## Klippy Services
   ##
   klipper:
-    image: mkuf/klipper:latest
+    image: 3dmikep/klipper-jny3d:latest
     restart: unless-stopped
     privileged: true
     logging:
@@ -25,7 +25,7 @@ services:
   ## WebApi
   ##
   moonraker:
-    image: mkuf/moonraker:latest
+    image: 3dmikep/moonraker-jny3d:latest
     restart: unless-stopped
     pid: host
     logging:

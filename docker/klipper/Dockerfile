@@ -112,13 +112,6 @@ RUN groupadd simulavr --gid 1000 \
  && useradd simulavr --uid 1000 --gid simulavr \
  && usermod simulavr --append --groups dialout
 
-RUN git clone git://git.savannah.nongnu.org/simulavr.git \
- && cd simulavr \
- && git checkout release-1.1.0 \
- && make python \
- && make build \
- && chown -R simulavr:simulavr /opt/simulavr
-
 USER simulavr
 ENV PYTHONPATH=/opt/simulavr/build/pysimulavr/
 VOLUME ["/opt/printer_data/run"]
