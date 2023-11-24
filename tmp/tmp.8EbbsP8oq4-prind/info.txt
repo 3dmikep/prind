@@ -1,0 +1,673 @@
+## docker system info
+Client: Docker Engine - Community
+ Version:    24.0.7
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.11.2
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.21.0
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 7
+  Running: 4
+  Paused: 0
+  Stopped: 3
+ Images: 8
+ Server Version: 24.0.7
+ Storage Driver: overlay2
+  Backing Filesystem: btrfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: systemd
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 61f9fd88f79f081d64d6fa3bb1a0dc71ec870523
+ runc version: v1.1.9-0-gccaecfc
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.0.13-01020-g92b3c5f34de9
+ Operating System: Debian GNU/Linux 11 (bullseye)
+ OSType: linux
+ Architecture: aarch64
+ CPUs: 4
+ Total Memory: 1.886GiB
+ Name: raspberrypi
+ ID: 3abeb9cc-06ea-41c5-a57a-1e0fe778572e
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+## END docker system info
+
+## docker compose version
+Docker Compose version v2.21.0
+## END docker compose version
+
+## docker system df
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          8         7         1.533GB   863.3MB (56%)
+Containers      7         5         324kB     0B (0%)
+Local Volumes   3         2         122.2MB   122.2MB (99%)
+Build Cache     0         0         0B        0B
+## END docker system df
+
+## docker image ls
+REPOSITORY                       TAG       IMAGE ID       CREATED         SIZE
+ghcr.io/mainsail-crew/mainsail   edge      79789cf5f620   2 days ago      54.6MB
+mkuf/klipper                     latest    8c36daab763d   3 days ago      467MB
+mkuf/moonraker                   latest    d438dcaa7179   6 days ago      327MB
+mkuf/ustreamer                   latest    f494d82e7e5b   10 days ago     129MB
+octoprint/octoprint              minimal   42060bc89221   5 weeks ago     707MB
+busybox                          latest    fc9db2894f4e   3 months ago    4.04MB
+hello-world                      latest    b038788ddb22   6 months ago    9.14kB
+traefik                          v2.5      09bdb197fc5d   22 months ago   99MB
+## END docker image ls
+
+## df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            828M     0  828M   0% /dev
+tmpfs           194M  1.6M  192M   1% /run
+/dev/mmcblk1p2   29G   20G  9.6G  67% /
+tmpfs           966M     0  966M   0% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+/dev/loop0       94M   94M     0 100% /snap/core/16096
+/dev/loop1       94M   94M     0 100% /snap/core/16204
+/dev/mmcblk1p1  255M   37M  219M  15% /boot/efi
+tmpfs           194M   20K  194M   1% /run/user/1000
+overlay          29G   20G  9.6G  67% /var/lib/docker/overlay2/f239a81d58c3a3cd1418bb3d91c4af962399e6008a0f999742fdd996a9a71922/merged
+overlay          29G   20G  9.6G  67% /var/lib/docker/overlay2/c24413536c9adfb7e235e2fd572c8b08825bf28765ac103e246e458aa19831be/merged
+overlay          29G   20G  9.6G  67% /var/lib/docker/overlay2/67328aded1a3ad29ed27a7cf8a1202174daaec69a14f6b06cbcbf2bdc06413be/merged
+overlay          29G   20G  9.6G  67% /var/lib/docker/overlay2/33b8bcc1a44d293e857df024b73c5e9e33e5da031bdc9b8b6da77103a52a5839/merged
+tmpfs           966M     0  966M   0% /var/lib/docker/volumes/prind_run/_data
+tmpfs           966M   80K  966M   1% /var/lib/docker/volumes/prind_log/_data
+## END df -h
+
+## ls -lRn /dev
+/dev:
+total 0
+crw-r--r--  1    0   0  10, 235 Nov 13 14:28 autofs
+drwxr-xr-x  2    0   0      260 Dec 31  1969 block
+crw-rw----  1    0   6  10, 234 Nov 13 14:28 btrfs-control
+drwxr-xr-x  3    0   0       60 Dec 31  1969 bus
+crw-rw----  1    0  44 240,   0 Nov 13 14:28 cec0
+drwxr-xr-x  2    0   0     3540 Nov 13 14:43 char
+crw--w----  1    0   5   5,   1 Nov 13 14:28 console
+crw-------  1    0   0  10, 126 Nov 13 14:28 cpu_dma_latency
+crw-------  1    0   0  10, 203 Nov 13 14:28 cuse
+drwxr-xr-x  7    0   0      140 Dec 31  1969 disk
+drwxr-xr-x  3    0   0      120 Nov 13 14:28 dri
+crw-------  1    0   0  10, 127 Nov 13 14:28 efi_capsule_loader
+crw-rw----  1    0  44  29,   0 Nov 13 14:28 fb0
+lrwxrwxrwx  1    0   0       13 Aug  7  2022 fd -> /proc/self/fd
+crw-rw-rw-  1    0   0   1,   7 Nov 13 14:28 full
+crw-rw-rw-  1    0   0  10, 229 Nov 13 14:28 fuse
+crw-rw----  1    0 997 254,   0 Nov 13 14:28 gpiochip0
+crw-rw----  1    0 997 254,   1 Nov 13 14:28 gpiochip1
+drwxr-xr-x  2    0   0        0 Aug  7  2022 hugepages
+crw-------  1    0   0  10, 183 Nov 13 14:28 hwrng
+crw-rw----  1    0 998  89,   0 Nov 13 14:28 i2c-0
+lrwxrwxrwx  1    0   0       12 Aug  7  2022 initctl -> /run/initctl
+drwxr-xr-x  3    0   0      100 Nov 13 14:28 input
+crw-r--r--  1    0   0   1,  11 Nov 13 14:28 kmsg
+crw-rw----+ 1    0 105  10, 232 Nov 13 14:28 kvm
+crw-rw----  1    0  44 241,   0 Nov 13 14:28 lirc0
+lrwxrwxrwx  1    0   0       28 Aug  7  2022 log -> /run/systemd/journal/dev-log
+brw-rw----  1    0   6   7,   0 Nov 13 14:28 loop0
+brw-rw----  1    0   6   7,   1 Nov 13 14:28 loop1
+brw-rw----  1    0   6   7,   2 Nov 13 14:28 loop2
+brw-rw----  1    0   6   7,   3 Nov 13 14:28 loop3
+brw-rw----  1    0   6   7,   4 Nov 13 14:28 loop4
+brw-rw----  1    0   6   7,   5 Nov 13 14:28 loop5
+brw-rw----  1    0   6   7,   6 Nov 13 14:28 loop6
+brw-rw----  1    0   6   7,   7 Nov 13 14:28 loop7
+crw-rw----  1    0   6  10, 237 Nov 13 14:28 loop-control
+drwxr-xr-x  2    0   0       60 Nov 13 14:28 mapper
+crw-rw----  1    0  44 238,   0 Nov 13 14:28 media0
+crw-r-----  1    0  15   1,   1 Nov 13 14:28 mem
+brw-rw----  1    0   6 179,   0 Nov 13 14:28 mmcblk1
+brw-rw----  1    0   6 179,   1 Nov 13 14:28 mmcblk1p1
+brw-rw----  1    0   6 179,   2 Nov 13 14:28 mmcblk1p2
+drwxrwxrwt  2    0   0       40 Dec 31  1969 mqueue
+drwxr-xr-x  2    0   0       60 Dec 31  1969 net
+crw-rw-rw-  1    0   0   1,   3 Nov 13 14:28 null
+crw-r-----  1    0  15   1,   4 Nov 13 14:28 port
+crw-rw-rw-  1    0   5   5,   2 Nov 14 17:36 ptmx
+drwxr-xr-x  2    0   0        0 Dec 31  1969 pts
+crw-------  1    0   0   2,   0 Nov 13 14:28 ptyp0
+crw-------  1    0   0   2,   1 Nov 13 14:28 ptyp1
+crw-------  1    0   0   2,   2 Nov 13 14:28 ptyp2
+crw-------  1    0   0   2,   3 Nov 13 14:28 ptyp3
+crw-------  1    0   0   2,   4 Nov 13 14:28 ptyp4
+crw-------  1    0   0   2,   5 Nov 13 14:28 ptyp5
+crw-------  1    0   0   2,   6 Nov 13 14:28 ptyp6
+crw-------  1    0   0   2,   7 Nov 13 14:28 ptyp7
+crw-------  1    0   0   2,   8 Nov 13 14:28 ptyp8
+crw-------  1    0   0   2,   9 Nov 13 14:28 ptyp9
+crw-------  1    0   0   2,  10 Nov 13 14:28 ptypa
+crw-------  1    0   0   2,  11 Nov 13 14:28 ptypb
+crw-------  1    0   0   2,  12 Nov 13 14:28 ptypc
+crw-------  1    0   0   2,  13 Nov 13 14:28 ptypd
+crw-------  1    0   0   2,  14 Nov 13 14:28 ptype
+crw-------  1    0   0   2,  15 Nov 13 14:28 ptypf
+crw-rw-rw-  1    0   0   1,   8 Nov 13 14:28 random
+crw-rw-r--+ 1    0 108  10, 242 Nov 13 14:28 rfkill
+drwxr-xr-x  4    0   0       80 Nov 13 14:43 serial
+drwxrwxrwt  2    0   0       40 Aug  7  2022 shm
+crw-------  1    0   0  10, 231 Nov 13 14:28 snapshot
+drwxr-xr-x  4    0   0      200 Nov 13 14:28 snd
+lrwxrwxrwx  1    0   0       15 Aug  7  2022 stderr -> /proc/self/fd/2
+lrwxrwxrwx  1    0   0       15 Aug  7  2022 stdin -> /proc/self/fd/0
+lrwxrwxrwx  1    0   0       15 Aug  7  2022 stdout -> /proc/self/fd/1
+crw-rw-rw-  1    0   5   5,   0 Nov 14 12:34 tty
+crw--w----  1    0   5   4,   0 Nov 13 14:28 tty0
+crw-------  1 1000   5   4,   1 Nov 13 14:28 tty1
+crw--w----  1    0   5   4,  10 Nov 13 14:28 tty10
+crw--w----  1    0   5   4,  11 Nov 13 14:28 tty11
+crw--w----  1    0   5   4,  12 Nov 13 14:28 tty12
+crw--w----  1    0   5   4,  13 Nov 13 14:28 tty13
+crw--w----  1    0   5   4,  14 Nov 13 14:28 tty14
+crw--w----  1    0   5   4,  15 Nov 13 14:28 tty15
+crw--w----  1    0   5   4,  16 Nov 13 14:28 tty16
+crw--w----  1    0   5   4,  17 Nov 13 14:28 tty17
+crw--w----  1    0   5   4,  18 Nov 13 14:28 tty18
+crw--w----  1    0   5   4,  19 Nov 13 14:28 tty19
+crw--w----  1    0   5   4,   2 Nov 13 14:28 tty2
+crw--w----  1    0   5   4,  20 Nov 13 14:28 tty20
+crw--w----  1    0   5   4,  21 Nov 13 14:28 tty21
+crw--w----  1    0   5   4,  22 Nov 13 14:28 tty22
+crw--w----  1    0   5   4,  23 Nov 13 14:28 tty23
+crw--w----  1    0   5   4,  24 Nov 13 14:28 tty24
+crw--w----  1    0   5   4,  25 Nov 13 14:28 tty25
+crw--w----  1    0   5   4,  26 Nov 13 14:28 tty26
+crw--w----  1    0   5   4,  27 Nov 13 14:28 tty27
+crw--w----  1    0   5   4,  28 Nov 13 14:28 tty28
+crw--w----  1    0   5   4,  29 Nov 13 14:28 tty29
+crw--w----  1    0   5   4,   3 Nov 13 14:28 tty3
+crw--w----  1    0   5   4,  30 Nov 13 14:28 tty30
+crw--w----  1    0   5   4,  31 Nov 13 14:28 tty31
+crw--w----  1    0   5   4,  32 Nov 13 14:28 tty32
+crw--w----  1    0   5   4,  33 Nov 13 14:28 tty33
+crw--w----  1    0   5   4,  34 Nov 13 14:28 tty34
+crw--w----  1    0   5   4,  35 Nov 13 14:28 tty35
+crw--w----  1    0   5   4,  36 Nov 13 14:28 tty36
+crw--w----  1    0   5   4,  37 Nov 13 14:28 tty37
+crw--w----  1    0   5   4,  38 Nov 13 14:28 tty38
+crw--w----  1    0   5   4,  39 Nov 13 14:28 tty39
+crw--w----  1    0   5   4,   4 Nov 13 14:28 tty4
+crw--w----  1    0   5   4,  40 Nov 13 14:28 tty40
+crw--w----  1    0   5   4,  41 Nov 13 14:28 tty41
+crw--w----  1    0   5   4,  42 Nov 13 14:28 tty42
+crw--w----  1    0   5   4,  43 Nov 13 14:28 tty43
+crw--w----  1    0   5   4,  44 Nov 13 14:28 tty44
+crw--w----  1    0   5   4,  45 Nov 13 14:28 tty45
+crw--w----  1    0   5   4,  46 Nov 13 14:28 tty46
+crw--w----  1    0   5   4,  47 Nov 13 14:28 tty47
+crw--w----  1    0   5   4,  48 Nov 13 14:28 tty48
+crw--w----  1    0   5   4,  49 Nov 13 14:28 tty49
+crw--w----  1    0   5   4,   5 Nov 13 14:28 tty5
+crw--w----  1    0   5   4,  50 Nov 13 14:28 tty50
+crw--w----  1    0   5   4,  51 Nov 13 14:28 tty51
+crw--w----  1    0   5   4,  52 Nov 13 14:28 tty52
+crw--w----  1    0   5   4,  53 Nov 13 14:28 tty53
+crw--w----  1    0   5   4,  54 Nov 13 14:28 tty54
+crw--w----  1    0   5   4,  55 Nov 13 14:28 tty55
+crw--w----  1    0   5   4,  56 Nov 13 14:28 tty56
+crw--w----  1    0   5   4,  57 Nov 13 14:28 tty57
+crw--w----  1    0   5   4,  58 Nov 13 14:28 tty58
+crw--w----  1    0   5   4,  59 Nov 13 14:28 tty59
+crw--w----  1    0   5   4,   6 Nov 13 14:28 tty6
+crw--w----  1    0   5   4,  60 Nov 13 14:28 tty60
+crw--w----  1    0   5   4,  61 Nov 13 14:28 tty61
+crw--w----  1    0   5   4,  62 Nov 13 14:28 tty62
+crw--w----  1    0   5   4,  63 Nov 13 14:28 tty63
+crw--w----  1    0   5   4,   7 Nov 13 14:28 tty7
+crw--w----  1    0   5   4,   8 Nov 13 14:28 tty8
+crw--w----  1    0   5   4,   9 Nov 13 14:28 tty9
+crw--w----  1    0   5 245,   0 Nov 13 14:28 ttyAML0
+crw-------  1    0   0   3,   0 Nov 13 14:28 ttyp0
+crw-------  1    0   0   3,   1 Nov 13 14:28 ttyp1
+crw-------  1    0   0   3,   2 Nov 13 14:28 ttyp2
+crw-------  1    0   0   3,   3 Nov 13 14:28 ttyp3
+crw-------  1    0   0   3,   4 Nov 13 14:28 ttyp4
+crw-------  1    0   0   3,   5 Nov 13 14:28 ttyp5
+crw-------  1    0   0   3,   6 Nov 13 14:28 ttyp6
+crw-------  1    0   0   3,   7 Nov 13 14:28 ttyp7
+crw-------  1    0   0   3,   8 Nov 13 14:28 ttyp8
+crw-------  1    0   0   3,   9 Nov 13 14:28 ttyp9
+crw-------  1    0   0   3,  10 Nov 13 14:28 ttypa
+crw-------  1    0   0   3,  11 Nov 13 14:28 ttypb
+crw-------  1    0   0   3,  12 Nov 13 14:28 ttypc
+crw-------  1    0   0   3,  13 Nov 13 14:28 ttypd
+crw-------  1    0   0   3,  14 Nov 13 14:28 ttype
+crw-------  1    0   0   3,  15 Nov 13 14:28 ttypf
+crw-rw----  1    0  20   4,  64 Nov 13 14:28 ttyS0
+crw-rw----  1    0  20   4,  65 Nov 13 14:28 ttyS1
+crw-rw----  1    0  20   4,  66 Nov 13 14:28 ttyS2
+crw-rw----  1    0  20   4,  67 Nov 13 14:28 ttyS3
+crw-rw----+ 1    0  20 188,   1 Nov 14 17:10 ttyUSB1
+crw-------  1    0   0  10, 239 Nov 13 14:28 uhid
+crw-------  1    0   0  10, 223 Nov 13 14:28 uinput
+crw-rw-rw-  1    0   0   1,   9 Nov 13 14:28 urandom
+crw-------  1    0   0  10, 240 Nov 13 14:28 userio
+drwxr-xr-x  4    0   0       80 Nov 13 14:28 v4l
+crw-rw----  1    0   5   7,   0 Nov 13 14:28 vcs
+crw-rw----  1    0   5   7,   1 Nov 13 14:28 vcs1
+crw-rw----  1    0   5   7,   2 Nov 13 14:28 vcs2
+crw-rw----  1    0   5   7,   3 Nov 13 14:28 vcs3
+crw-rw----  1    0   5   7,   4 Nov 13 14:28 vcs4
+crw-rw----  1    0   5   7,   5 Nov 13 14:28 vcs5
+crw-rw----  1    0   5   7,   6 Nov 13 14:28 vcs6
+crw-rw----  1    0   5   7,   7 Nov 13 14:28 vcs7
+crw-rw----  1    0   5   7, 128 Nov 13 14:28 vcsa
+crw-rw----  1    0   5   7, 129 Nov 13 14:28 vcsa1
+crw-rw----  1    0   5   7, 130 Nov 13 14:28 vcsa2
+crw-rw----  1    0   5   7, 131 Nov 13 14:28 vcsa3
+crw-rw----  1    0   5   7, 132 Nov 13 14:28 vcsa4
+crw-rw----  1    0   5   7, 133 Nov 13 14:28 vcsa5
+crw-rw----  1    0   5   7, 134 Nov 13 14:28 vcsa6
+crw-rw----  1    0   5   7, 135 Nov 13 14:28 vcsa7
+crw-rw----  1    0   5   7,  64 Nov 13 14:28 vcsu
+crw-rw----  1    0   5   7,  65 Nov 13 14:28 vcsu1
+crw-rw----  1    0   5   7,  66 Nov 13 14:28 vcsu2
+crw-rw----  1    0   5   7,  67 Nov 13 14:28 vcsu3
+crw-rw----  1    0   5   7,  68 Nov 13 14:28 vcsu4
+crw-rw----  1    0   5   7,  69 Nov 13 14:28 vcsu5
+crw-rw----  1    0   5   7,  70 Nov 13 14:28 vcsu6
+crw-rw----  1    0   5   7,  71 Nov 13 14:28 vcsu7
+drwxr-xr-x  2    0   0       60 Dec 31  1969 vfio
+crw-------  1    0   0  10, 137 Nov 13 14:28 vhci
+crw-rw----+ 1    0  44  81,   0 Nov 13 14:28 video0
+crw-rw----+ 1    0  44  81,   1 Nov 13 14:28 video1
+crw-rw----+ 1    0  44  81,   2 Nov 13 14:28 video2
+crw-------  1    0   0  10, 130 Nov 13 14:28 watchdog
+crw-------  1    0   0 247,   0 Nov 13 14:28 watchdog0
+crw-rw-rw-  1    0   0   1,   5 Nov 13 14:28 zero
+
+/dev/block:
+total 0
+lrwxrwxrwx 1 0 0 10 Nov 13 14:28 179:0 -> ../mmcblk1
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 179:1 -> ../mmcblk1p1
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 179:2 -> ../mmcblk1p2
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:0 -> ../loop0
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:1 -> ../loop1
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:2 -> ../loop2
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:3 -> ../loop3
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:4 -> ../loop4
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:5 -> ../loop5
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:6 -> ../loop6
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:7 -> ../loop7
+
+/dev/bus:
+total 0
+drwxr-xr-x 3 0 0 60 Dec 31  1969 usb
+
+/dev/bus/usb:
+total 0
+drwxr-xr-x 2 0 0 120 Nov 13 14:43 001
+
+/dev/bus/usb/001:
+total 0
+crw-rw-r-- 1 0 0 189, 0 Nov 13 14:28 001
+crw-rw-r-- 1 0 0 189, 1 Nov 13 14:28 002
+crw-rw-r-- 1 0 0 189, 2 Nov 13 14:28 003
+crw-rw-r-- 1 0 0 189, 4 Nov 13 14:43 005
+
+/dev/char:
+total 0
+lrwxrwxrwx 1 0 0 18 Nov 13 14:28 10:126 -> ../cpu_dma_latency
+lrwxrwxrwx 1 0 0 21 Nov 13 14:28 10:127 -> ../efi_capsule_loader
+lrwxrwxrwx 1 0 0 11 Nov 13 14:28 10:130 -> ../watchdog
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 10:183 -> ../hwrng
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 10:196 -> ../vfio/vfio
+lrwxrwxrwx 1 0 0 10 Nov 13 14:28 10:200 -> ../net/tun
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 10:229 -> ../fuse
+lrwxrwxrwx 1 0 0 11 Nov 13 14:28 10:231 -> ../snapshot
+lrwxrwxrwx 1 0 0  6 Nov 13 14:28 10:232 -> ../kvm
+lrwxrwxrwx 1 0 0 16 Nov 13 14:28 10:234 -> ../btrfs-control
+lrwxrwxrwx 1 0 0  9 Nov 13 14:28 10:235 -> ../autofs
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 10:237 -> ../loop-control
+lrwxrwxrwx 1 0 0  9 Nov 13 14:28 10:242 -> ../rfkill
+lrwxrwxrwx 1 0 0  6 Nov 13 14:28 1:1 -> ../mem
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 1:11 -> ../kmsg
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 116:2 -> ../snd/pcmC0D0p
+lrwxrwxrwx 1 0 0 16 Nov 13 14:28 116:3 -> ../snd/controlC0
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 116:33 -> ../snd/timer
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 116:4 -> ../snd/pcmC1D0c
+lrwxrwxrwx 1 0 0 16 Nov 13 14:28 116:5 -> ../snd/controlC1
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 1:3 -> ../null
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 13:64 -> ../input/event0
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 13:65 -> ../input/event1
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 1:4 -> ../port
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 1:5 -> ../zero
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 1:7 -> ../full
+lrwxrwxrwx 1 0 0  9 Nov 13 14:28 1:8 -> ../random
+lrwxrwxrwx 1 0 0 10 Nov 13 14:43 188:1 -> ../ttyUSB1
+lrwxrwxrwx 1 0 0 18 Nov 13 14:28 189:0 -> ../bus/usb/001/001
+lrwxrwxrwx 1 0 0 18 Nov 13 14:28 189:1 -> ../bus/usb/001/002
+lrwxrwxrwx 1 0 0 18 Nov 13 14:28 189:2 -> ../bus/usb/001/003
+lrwxrwxrwx 1 0 0 18 Nov 13 14:43 189:4 -> ../bus/usb/001/005
+lrwxrwxrwx 1 0 0 10 Nov 13 14:28 1:9 -> ../urandom
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:0 -> ../ptyp0
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:1 -> ../ptyp1
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:10 -> ../ptypa
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:11 -> ../ptypb
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:12 -> ../ptypc
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:13 -> ../ptypd
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:14 -> ../ptype
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:15 -> ../ptypf
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:2 -> ../ptyp2
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 226:1 -> ../dri/card1
+lrwxrwxrwx 1 0 0 17 Nov 13 14:28 226:128 -> ../dri/renderD128
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 226:3 -> ../dri/card3
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:3 -> ../ptyp3
+lrwxrwxrwx 1 0 0  9 Nov 13 14:28 238:0 -> ../media0
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:4 -> ../ptyp4
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 240:0 -> ../cec0
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 241:0 -> ../lirc0
+lrwxrwxrwx 1 0 0 10 Nov 13 14:28 245:0 -> ../ttyAML0
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 247:0 -> ../watchdog0
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:5 -> ../ptyp5
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 254:0 -> ../gpiochip0
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 254:1 -> ../gpiochip1
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:6 -> ../ptyp6
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:7 -> ../ptyp7
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:8 -> ../ptyp8
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 2:9 -> ../ptyp9
+lrwxrwxrwx 1 0 0  6 Nov 13 14:28 29:0 -> ../fb0
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:0 -> ../ttyp0
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:1 -> ../ttyp1
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:10 -> ../ttypa
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:11 -> ../ttypb
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:12 -> ../ttypc
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:13 -> ../ttypd
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:14 -> ../ttype
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:15 -> ../ttypf
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:2 -> ../ttyp2
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:3 -> ../ttyp3
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:4 -> ../ttyp4
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:5 -> ../ttyp5
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:6 -> ../ttyp6
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:7 -> ../ttyp7
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:8 -> ../ttyp8
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 3:9 -> ../ttyp9
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:0 -> ../tty0
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:1 -> ../tty1
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:10 -> ../tty10
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:11 -> ../tty11
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:12 -> ../tty12
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:13 -> ../tty13
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:14 -> ../tty14
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:15 -> ../tty15
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:16 -> ../tty16
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:17 -> ../tty17
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:18 -> ../tty18
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:19 -> ../tty19
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:2 -> ../tty2
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:20 -> ../tty20
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:21 -> ../tty21
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:22 -> ../tty22
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:23 -> ../tty23
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:24 -> ../tty24
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:25 -> ../tty25
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:26 -> ../tty26
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:27 -> ../tty27
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:28 -> ../tty28
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:29 -> ../tty29
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:3 -> ../tty3
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:30 -> ../tty30
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:31 -> ../tty31
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:32 -> ../tty32
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:33 -> ../tty33
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:34 -> ../tty34
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:35 -> ../tty35
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:36 -> ../tty36
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:37 -> ../tty37
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:38 -> ../tty38
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:39 -> ../tty39
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:4 -> ../tty4
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:40 -> ../tty40
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:41 -> ../tty41
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:42 -> ../tty42
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:43 -> ../tty43
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:44 -> ../tty44
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:45 -> ../tty45
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:46 -> ../tty46
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:47 -> ../tty47
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:48 -> ../tty48
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:49 -> ../tty49
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:5 -> ../tty5
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:50 -> ../tty50
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:51 -> ../tty51
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:52 -> ../tty52
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:53 -> ../tty53
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:54 -> ../tty54
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:55 -> ../tty55
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:56 -> ../tty56
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:57 -> ../tty57
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:58 -> ../tty58
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:59 -> ../tty59
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:6 -> ../tty6
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:60 -> ../tty60
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:61 -> ../tty61
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:62 -> ../tty62
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:63 -> ../tty63
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:64 -> ../ttyS0
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:65 -> ../ttyS1
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:66 -> ../ttyS2
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 4:67 -> ../ttyS3
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:7 -> ../tty7
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:8 -> ../tty8
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 4:9 -> ../tty9
+lrwxrwxrwx 1 0 0  6 Nov 13 14:28 5:0 -> ../tty
+lrwxrwxrwx 1 0 0 10 Nov 13 14:28 5:1 -> ../console
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 5:2 -> ../ptmx
+lrwxrwxrwx 1 0 0  6 Nov 13 14:28 7:0 -> ../vcs
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 7:1 -> ../vcs1
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 7:128 -> ../vcsa
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:129 -> ../vcsa1
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:130 -> ../vcsa2
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:131 -> ../vcsa3
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:132 -> ../vcsa4
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:133 -> ../vcsa5
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:134 -> ../vcsa6
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:135 -> ../vcsa7
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 7:2 -> ../vcs2
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 7:3 -> ../vcs3
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 7:4 -> ../vcs4
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 7:5 -> ../vcs5
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 7:6 -> ../vcs6
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 7:64 -> ../vcsu
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:65 -> ../vcsu1
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:66 -> ../vcsu2
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:67 -> ../vcsu3
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:68 -> ../vcsu4
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:69 -> ../vcsu5
+lrwxrwxrwx 1 0 0  7 Nov 13 14:28 7:7 -> ../vcs7
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:70 -> ../vcsu6
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 7:71 -> ../vcsu7
+lrwxrwxrwx 1 0 0  9 Nov 13 14:28 81:0 -> ../video0
+lrwxrwxrwx 1 0 0  9 Nov 13 14:28 81:1 -> ../video1
+lrwxrwxrwx 1 0 0  9 Nov 13 14:28 81:2 -> ../video2
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 89:0 -> ../i2c-0
+
+/dev/disk:
+total 0
+drwxr-xr-x 2 0 0 100 Dec 31  1969 by-id
+drwxr-xr-x 2 0 0  80 Dec 31  1969 by-label
+drwxr-xr-x 2 0 0  80 Dec 31  1969 by-partuuid
+drwxr-xr-x 2 0 0 100 Dec 31  1969 by-path
+drwxr-xr-x 2 0 0  80 Dec 31  1969 by-uuid
+
+/dev/disk/by-id:
+total 0
+lrwxrwxrwx 1 0 0 13 Nov 13 14:28 mmc-SC32G_0x85889cc9 -> ../../mmcblk1
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 mmc-SC32G_0x85889cc9-part1 -> ../../mmcblk1p1
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 mmc-SC32G_0x85889cc9-part2 -> ../../mmcblk1p2
+
+/dev/disk/by-label:
+total 0
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 boot -> ../../mmcblk1p1
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 rootfs -> ../../mmcblk1p2
+
+/dev/disk/by-partuuid:
+total 0
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 63ee4f38-01 -> ../../mmcblk1p1
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 63ee4f38-02 -> ../../mmcblk1p2
+
+/dev/disk/by-path:
+total 0
+lrwxrwxrwx 1 0 0 13 Nov 13 14:28 platform-d0072000.mmc -> ../../mmcblk1
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 platform-d0072000.mmc-part1 -> ../../mmcblk1p1
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 platform-d0072000.mmc-part2 -> ../../mmcblk1p2
+
+/dev/disk/by-uuid:
+total 0
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 1cd42925-4305-4a79-bb10-f50d1fda10f8 -> ../../mmcblk1p2
+lrwxrwxrwx 1 0 0 15 Nov 13 14:28 3772-58CD -> ../../mmcblk1p1
+
+/dev/dri:
+total 0
+drwxr-xr-x  2 0   0      100 Nov 13 14:28 by-path
+crw-rw----+ 1 0  44 226,   1 Nov 13 14:28 card1
+crw-rw----+ 1 0  44 226,   3 Nov 13 14:28 card3
+crw-rw----+ 1 0 106 226, 128 Nov 13 14:28 renderD128
+
+/dev/dri/by-path:
+total 0
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 platform-d00c0000.gpu-card -> ../card1
+lrwxrwxrwx 1 0 0 13 Nov 13 14:28 platform-d00c0000.gpu-render -> ../renderD128
+lrwxrwxrwx 1 0 0  8 Nov 13 14:28 platform-d0100000.vpu-card -> ../card3
+
+/dev/hugepages:
+total 0
+
+/dev/input:
+total 0
+drwxr-xr-x 2 0   0     80 Nov 13 14:28 by-path
+crw-rw---- 1 0 104 13, 64 Nov 13 14:28 event0
+crw-rw---- 1 0 104 13, 65 Nov 13 14:28 event1
+
+/dev/input/by-path:
+total 0
+lrwxrwxrwx 1 0 0 9 Nov 13 14:28 platform-c8100100.cec-event -> ../event1
+lrwxrwxrwx 1 0 0 9 Nov 13 14:28 platform-c8100580.ir-event -> ../event0
+
+/dev/mapper:
+total 0
+crw------- 1 0 0 10, 236 Nov 13 14:28 control
+
+/dev/mqueue:
+total 0
+
+/dev/net:
+total 0
+crw-rw-rw- 1 0 0 10, 200 Nov 13 14:28 tun
+
+/dev/pts:
+total 0
+crw-rw---- 1 1000 5 136, 0 Nov 14 17:36 0
+crw--w---- 1 1000 5 136, 1 Nov 14 17:36 1
+crw-rw---- 1 1000 5 136, 2 Nov 14 17:11 2
+c--------- 1    0 0   5, 2 Dec 31  1969 ptmx
+
+/dev/serial:
+total 0
+drwxr-xr-x 2 0 0 60 Nov 13 14:43 by-id
+drwxr-xr-x 2 0 0 60 Nov 13 14:43 by-path
+
+/dev/serial/by-id:
+total 0
+lrwxrwxrwx 1 0 0 13 Nov 13 14:43 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB1
+
+/dev/serial/by-path:
+total 0
+lrwxrwxrwx 1 0 0 13 Nov 13 14:43 platform-xhci-hcd.0.auto-usb-0:1.3:1.0-port0 -> ../../ttyUSB1
+
+/dev/shm:
+total 0
+
+/dev/snd:
+total 0
+drwxr-xr-x  2 0  0      60 Nov 13 14:28 by-id
+drwxr-xr-x  2 0  0      80 Nov 13 14:28 by-path
+crw-rw----+ 1 0 29 116,  3 Nov 13 14:28 controlC0
+crw-rw----+ 1 0 29 116,  5 Nov 13 14:28 controlC1
+crw-rw----+ 1 0 29 116,  2 Nov 13 14:28 pcmC0D0p
+crw-rw----+ 1 0 29 116,  4 Nov 13 14:28 pcmC1D0c
+crw-rw----+ 1 0 29 116,  1 Nov 13 14:28 seq
+crw-rw----+ 1 0 29 116, 33 Nov 13 14:28 timer
+
+/dev/snd/by-id:
+total 0
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 usb-CVTE_Camera_000000-02 -> ../controlC1
+
+/dev/snd/by-path:
+total 0
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 platform-sound -> ../controlC0
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 platform-xhci-hcd.0.auto-usb-0:1.2:1.2 -> ../controlC1
+
+/dev/v4l:
+total 0
+drwxr-xr-x 2 0 0  80 Nov 13 14:28 by-id
+drwxr-xr-x 2 0 0 100 Nov 13 14:28 by-path
+
+/dev/v4l/by-id:
+total 0
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 usb-CVTE_Camera_000000-video-index0 -> ../../video1
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 usb-CVTE_Camera_000000-video-index1 -> ../../video2
+
+/dev/v4l/by-path:
+total 0
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 platform-c8820000.video-codec-video-index0 -> ../../video0
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 platform-xhci-hcd.0.auto-usb-0:1.2:1.0-video-index0 -> ../../video1
+lrwxrwxrwx 1 0 0 12 Nov 13 14:28 platform-xhci-hcd.0.auto-usb-0:1.2:1.0-video-index1 -> ../../video2
+
+/dev/vfio:
+total 0
+crw-rw-rw- 1 0 0 10, 196 Nov 13 14:28 vfio
+## END ls -lRn /dev
+
+## docker ps -af label=org.prind.service
+CONTAINER ID   IMAGE                                 COMMAND                  CREATED          STATUS                          PORTS                               NAMES
+a14f563dabee   mkuf/moonraker:latest                 "/opt/venv/bin/pytho…"   25 minutes ago   Restarting (1) 25 seconds ago                                       prind-moonraker-1
+5328899562e2   mkuf/klipper:latest                   "/opt/venv/bin/pytho…"   25 minutes ago   Up 25 minutes                                                       prind-klipper-1
+73f225669173   traefik:v2.5                          "/entrypoint.sh --ac…"   25 minutes ago   Up 25 minutes                   0.0.0.0:80->80/tcp, :::80->80/tcp   prind-traefik-1
+d4a78de318a3   ghcr.io/mainsail-crew/mainsail:edge   "/docker-entrypoint.…"   25 minutes ago   Up 17 minutes                   80/tcp                              prind-mainsail-1
+8e6df2b4b730   busybox:latest                        "chown -R 1000:1000 …"   25 minutes ago   Exited (0) 25 minutes ago                                           prind-init-1
+40197d5838f5   mkuf/ustreamer:latest                 "/opt/ustreamer/ustr…"   25 minutes ago   Up 25 minutes                   8080/tcp                            prind-webcam-1
+## END docker ps -af label=org.prind.service
+
+## docker cp 5328899562e2:/opt/printer_data/logs /tmp/tmp.8EbbsP8oq4-prind
+## END docker cp 5328899562e2:/opt/printer_data/logs /tmp/tmp.8EbbsP8oq4-prind
+
+## cp -a /home/admin/prind /tmp/tmp.8EbbsP8oq4-prind
+## END cp -a /home/admin/prind /tmp/tmp.8EbbsP8oq4-prind
+
+## Image Versions
+moonraker: mkuf/moonraker:latest 975011d19078c209ff5175698962ab12c10b1a07
+klipper: mkuf/klipper:latest 0d67d9c45d2dc39f8b4be7d1bb54b94b2698a2b6
+traefik: traefik:v2.5 
+mainsail: ghcr.io/mainsail-crew/mainsail:edge 
+init: busybox:latest 
+webcam: mkuf/ustreamer:latest fc3e0232e118014c7896f6ed9ca982fdb653e01f
+## END Image Versions

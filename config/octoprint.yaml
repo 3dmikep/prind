@@ -1,10 +1,73 @@
+accessControl:
+  userfile: /octoprint/octoprint/users.yaml
+api:
+  key: 8C26FEF0A76442AE87B294602BF510E1
+plugins:
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1698671700
+      _important:
+        read_until: 1698310200
+      _octopi:
+        read_until: 1684929600
+      _plugins:
+        read_until: 1694995200
+      _releases:
+        read_until: 1696862700
+  classicwebcam:
+    _config_version: 1
+    snapshot: http://10.0.0.103:8080/?action=snapshot
+    stream: http://10.0.0.103:8080/?action=stream
+  discovery:
+    upnpUuid: 827fdd95-cb56-42ba-aa9e-658cf23033fa
+  errortracking:
+    unique_id: 66ecac84-8a02-4199-9cfe-245857b4b657
+  gcodeviewer:
+    _config_version: 1
+  klipper:
+    _config_version: 4
+    configuration:
+      debug_logging: true
+  softwareupdate:
+    _config_version: 9
+  tracking:
+    enabled: true
+    unique_id: 55fc6f94-d42f-4740-866c-624d94064932
+  virtual_printer:
+    _config_version: 1
+printerProfiles:
+  default: _default
 serial:
   additionalPorts:
   - /opt/printer_data/run/klipper.tty
+  - /tmp/printer
   autoconnect: true
-  port: /opt/printer_data/run/klipper.tty
-webcam:
-  snapshot: http://webcam:8080/snapshot
-  stream: /webcam/stream
-accessControl:
-  userfile: /octoprint/octoprint/users.yaml
+  log: true
+server:
+  commands:
+    serverRestartCommand: sudo systemctl restart octoprint
+    systemRestartCommand: sudo reboot
+    systemShutdownCommand: sudo shutdown now
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  secretKey: vnuqOCadtPXijx5Jjkjb3YZ3YM8IqvAq
+  seenWizards:
+    backup: null
+    classicwebcam: 1
+    corewizard: 4
+    tracking: null
+temperature:
+  profiles:
+  - bed: 100
+    chamber: null
+    extruder: 210
+    name: ABS
+  - bed: 60
+    chamber: null
+    extruder: 180
+    name: PLA

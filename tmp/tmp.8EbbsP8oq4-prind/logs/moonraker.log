@@ -1,0 +1,1620 @@
+-------------------- Log Start | Tue Nov 14 22:11:09 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:11:09,605 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:11:09,609 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:11:19 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:11:19,299 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:11:19,303 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:11:32 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:11:32,952 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:11:32,956 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:11:42 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:11:42,139 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:11:42,143 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:11:55 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:11:55,208 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:11:55,212 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:12:04 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:12:04,616 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:12:04,620 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:12:15 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:12:15,260 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:12:15,265 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:12:28 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:12:28,837 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:12:28,841 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:12:49 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:12:49,138 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:12:49,142 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:13:21 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:13:21,879 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:13:21,883 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:14:20 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:14:20,431 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:14:20,435 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:15:27 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:15:27,843 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:15:27,847 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:16:35 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:16:35,353 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:16:35,358 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:17:44 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:17:44,150 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:17:44,154 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:18:52 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:18:52,884 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:18:52,889 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:19:05 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:19:05,850 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:19:05,855 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:19:15 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:19:15,062 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:19:15,066 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:19:24 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:19:24,463 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:19:24,467 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:19:36 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:19:36,784 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:19:36,787 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:19:45 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:19:45,760 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:19:45,764 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:19:54 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:19:54,456 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:19:54,460 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:20:09 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:20:09,563 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:20:09,567 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:20:23 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:20:23,127 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:20:23,131 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:20:43 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:20:43,134 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:20:43,138 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:21:15 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:21:15,928 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:21:15,932 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:22:14 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:22:14,643 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:22:14,647 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:23:22 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:23:22,696 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:23:22,700 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:24:30 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:24:30,351 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:24:30,356 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:25:37 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:25:37,563 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:25:37,567 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:26:44 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:26:44,908 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:26:44,912 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:28:00 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:28:00,060 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:28:00,064 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:28:08 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:28:08,753 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:28:08,757 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:28:17 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:28:17,434 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:28:17,437 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:28:26 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:28:26,698 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:28:26,702 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:28:40 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:28:40,367 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:28:40,372 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:29:03 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:29:03,196 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:29:03,201 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:29:13 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:29:13,820 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:29:13,824 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:29:29 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:29:29,416 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:29:29,420 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:29:49 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:29:49,555 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:29:49,558 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:30:22 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:30:22,199 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:30:22,202 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:31:20 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:31:20,607 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:31:20,611 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:32:27 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:32:27,744 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:32:27,748 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:33:34 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:33:34,891 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:33:34,895 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:34:42 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:34:42,220 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:34:42,224 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Tue Nov 14 22:35:49 2023 --------------------
+data_path: /opt/printer_data
+is_default_data_path: False
+config_file: /opt/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b5f607fb55924cafb0149eb9f4f4cf76
+unix_socket_path: /opt/printer_data/comms/moonraker.sock
+software_version: ?
+log_file: /opt/printer_data/logs/moonraker.log
+python_version: 3.11.6 (main, Nov  1 2023, 10:18:35) [GCC 12.2.0]
+msgspec_enabled: False
+uvloop_enabled: False
+2023-11-14 22:35:49,266 [server.py:main()] - Server Config Error
+Traceback (most recent call last):
+  File "/opt/moonraker/moonraker/server.py", line 598, in main
+    server = Server(app_args, log_manager, event_loop)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 77, in __init__
+    self.config = config = self._parse_config()
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/server.py", line 141, in _parse_config
+    config = confighelper.get_configuration(self, self.app_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/moonraker/moonraker/confighelper.py", line 1051, in get_configuration
+    source.read_file(start_path)
+  File "/opt/moonraker/moonraker/confighelper.py", line 1039, in read_file
+    self._parse_file(main_conf, [])
+  File "/opt/moonraker/moonraker/confighelper.py", line 983, in _parse_file
+    raise ConfigError(
+moonraker.confighelper.ConfigError: No files matching include directive [include octoeverywhere-system.cfg]
+2023-11-14 22:35:49,269 [server.py:main()] - Server Shutdown
