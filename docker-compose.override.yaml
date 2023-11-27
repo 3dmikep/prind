@@ -9,7 +9,7 @@ services:
   webcam:
     <<: *ustreamer-svc
     devices:
-      - /dev/video0:/dev/webcam
+      - /dev/video1:/dev/webcam
     labels:
       org.prind.service: webcam
       traefik.enable: true
