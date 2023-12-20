@@ -1,10 +1,10 @@
 <p align=center><img src=img/prind-logo.png height=400px></p>
 
 # prind
-[![Image: Klipper](https://github.com/mkuf/prind/actions/workflows/klipper.yaml/badge.svg)](https://github.com/mkuf/prind/actions/workflows/klipper.yaml)
-[![Image: Moonraker](https://github.com/mkuf/prind/actions/workflows/moonraker.yaml/badge.svg)](https://github.com/mkuf/prind/actions/workflows/moonraker.yaml)
-[![Image: Klipperscreen](https://github.com/mkuf/prind/actions/workflows/klipperscreen.yaml/badge.svg)](https://github.com/mkuf/prind/actions/workflows/klipperscreen.yaml)
-[![Image: Ustreamer](https://github.com/mkuf/prind/actions/workflows/ustreamer.yaml/badge.svg)](https://github.com/mkuf/prind/actions/workflows/ustreamer.yaml)
+[![Image: Klipper](https://github.com/mkuf/prind/actions/workflows/image-build-klipper.yaml/badge.svg)](https://github.com/mkuf/prind/actions/workflows/image-build-klipper.yaml)
+[![Image: Moonraker](https://github.com/mkuf/prind/actions/workflows/image-build-moonraker.yaml/badge.svg)](https://github.com/mkuf/prind/actions/workflows/image-build-moonraker.yaml)
+[![Image: KlipperScreen](https://github.com/mkuf/prind/actions/workflows/image-build-klipperscreen.yaml/badge.svg)](https://github.com/mkuf/prind/actions/workflows/image-build-klipperscreen.yaml)
+[![Image: Ustreamer](https://github.com/mkuf/prind/actions/workflows/image-build-ustreamer.yaml/badge.svg)](https://github.com/mkuf/prind/actions/workflows/image-build-ustreamer.yaml)
 
 prind allows you to run the Software for your 3D Printer in Docker containers.  
 With a single Command, you can start up klipper and choose between multiple Frontends. 
@@ -244,6 +244,17 @@ calibrate_shaper resonances_y_20220708_125150.csv -o cal_y.png
   [...]
   Recommended shaper is mzv @ 48.2 Hz
 ```
+
+### Use CANBUS
+CAN Devices are network devices in the Hosts network namespace. Granting access for containers requires running them in host network mode.  
+Add the following snippet to your `docker-compose.override.yaml` and restart the stack.  
+Any further configuration has to be done in klipper, see the [official Klipper Docs](https://www.klipper3d.org/CANBUS.html)
+```yaml
+services:
+  klipper:
+    network_mode: host
+```
+
 
 ### Change Execution Options
 The Entrypoint for all Docker Images within this Repo are the actual Applications, which are run at container execution time.  
